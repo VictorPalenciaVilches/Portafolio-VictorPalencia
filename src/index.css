@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-[#0a0a0a] font-sans text-gray-100 antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  #root {
+    @apply overflow-x-hidden;
+  }
+}
