@@ -53,9 +53,8 @@ function TypewriterRole({ text, speed = TYPING_SPEED_MS }) {
     <>
       {displayed}
       <span
-        className={`ml-0.5 inline-block w-[3px] bg-[#06b6d4] align-middle ${
-          done ? 'animate-pulse' : 'opacity-100'
-        }`}
+        className={`ml-0.5 inline-block w-[3px] bg-[#06b6d4] align-middle ${done ? 'animate-pulse' : 'opacity-100'
+          }`}
         style={{ height: '1.1em' }}
         aria-hidden
       />
@@ -160,9 +159,9 @@ export default function Hero() {
             aria-label={t.hero.photoPlaceholder}
           >
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-[#141414]">
-              <img 
-                src={profilePhoto} 
-                alt="Profile" 
+              <img
+                src={profilePhoto}
+                alt="Profile"
                 className="h-full w-full object-cover"
               />
             </div>

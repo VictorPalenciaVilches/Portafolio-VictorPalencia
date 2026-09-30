@@ -113,8 +113,8 @@ const translations = {
       title: 'Apasionado por construir soluciones que importan',
       p1: 'Soy Victor Alejandro Palencia Vilches, Desarrollador Fullstack y estudiante de Ingeniería de Sistemas en octavo semestre. Construyo aplicaciones web completas — desde la base de datos hasta la interfaz de usuario.',
       p2: 'He entregado sistemas reales en producción usados por clientes activos, incluyendo plataformas de préstamos e inventarios para negocios. Combino fundamentos sólidos de programación con herramientas modernas de IA para entregar resultados más rápidos y de mejor calidad.',
-      location: '📍 Montería, Colombia',
-      available: '✅ Disponible para trabajo remoto',
+      location: ' Montería, Colombia',
+      available: ' Disponible para trabajo remoto',
     },
     services: {
       tag: 'Servicios',
