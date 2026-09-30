@@ -123,11 +123,12 @@ function ProjectCard({ project, labels, index }) {
             )
           )}
 
-          {project.inProduction ? (
+          {project.inProduction === true && (
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5 text-xs font-semibold text-emerald-400">
               {labels.inProduction}
             </span>
-          ) : (
+          )}
+          {project.inProduction === false && (
             <span className="inline-flex items-center rounded-full border border-gray-500/30 bg-gray-500/10 px-3 py-1.5 text-xs font-semibold text-gray-400">
               {labels.inDevelopment}
             </span>

@@ -3,6 +3,8 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
 import { SCROLL_OFFSET } from '../constants/motion';
+import profilePhoto from '../assets/Foto Portafolio.jpeg';
+
 const TYPING_SPEED_MS = 85;
 
 /** Staggered container for hero children */
@@ -154,13 +156,15 @@ export default function Hero() {
           className="flex justify-center lg:justify-end"
         >
           <div
-            className="relative h-64 w-64 rounded-full bg-gradient-to-br from-[#06b6d4] via-cyan-500 to-cyan-700 p-[3px] shadow-[0_0_48px_rgba(6,182,212,0.35)] sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+            className="relative h-64 w-64 overflow-hidden rounded-full bg-gradient-to-br from-[#06b6d4] via-cyan-500 to-cyan-700 p-[3px] shadow-[0_0_48px_rgba(6,182,212,0.35)] sm:h-72 sm:w-72 lg:h-80 lg:w-80"
             aria-label={t.hero.photoPlaceholder}
           >
-            <div className="flex h-full w-full items-center justify-center rounded-full bg-[#141414]">
-              <span className="text-sm font-medium text-gray-500">
-                {t.hero.photoPlaceholder}
-              </span>
+            <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-[#141414]">
+              <img 
+                src={profilePhoto} 
+                alt="Profile" 
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </motion.div>

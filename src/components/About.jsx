@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
 import { VIEWPORT, SECTION_CLASS } from '../constants/motion';
 import SectionDivider from './SectionDivider';
+import profilePhoto from '../assets/Foto Portafolio.jpeg';
 
 export default function About() {
   const { t } = useLanguage();
@@ -20,11 +21,13 @@ export default function About() {
         >
           <div className="w-full max-w-sm rounded-2xl border border-white/5 bg-[#111] p-6 shadow-[0_0_40px_rgba(6,182,212,0.08)] sm:p-8">
             <div className="mx-auto flex justify-center">
-              <div className="h-44 w-44 rounded-full bg-gradient-to-br from-[#06b6d4] via-cyan-500 to-cyan-700 p-[3px] shadow-[0_0_32px_rgba(6,182,212,0.3)] sm:h-52 sm:w-52">
-                <div className="flex h-full w-full items-center justify-center rounded-full bg-[#141414]">
-                  <span className="px-4 text-center text-sm font-medium text-gray-400">
-                    {t.hero.photoPlaceholder}
-                  </span>
+              <div className="h-44 w-44 overflow-hidden rounded-full bg-gradient-to-br from-[#06b6d4] via-cyan-500 to-cyan-700 p-[3px] shadow-[0_0_32px_rgba(6,182,212,0.3)] sm:h-52 sm:w-52">
+                <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-[#141414]">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Profile" 
+                    className="h-full w-full object-cover"
+                  />
                 </div>
               </div>
             </div>

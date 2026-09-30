@@ -49,10 +49,10 @@ const PROJECTS_SOURCE = {
         en: 'Elegant landing page for a 4-star hotel in Cereté, Córdoba. Bilingual ES/EN design, room gallery, services, events and booking system.',
       },
       tech: ['React', 'Vite', 'Tailwind CSS'],
-      github: 'https://github.com/VictorPalenciaVilches',
-      isPrivateRepo: false,
+      github: null,
+      isPrivateRepo: true,
       images: ['hotel.png'],
-      inProduction: false,
+      inProduction: null,
     },
     {
       title: 'Gestión Granero',
